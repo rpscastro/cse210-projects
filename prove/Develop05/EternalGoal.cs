@@ -10,6 +10,7 @@ public class EternalGoal : Goal
 
     public override void RecordEvent()
     {
+        Console.WriteLine($"Congratulations! You have earned {_points} points!");
 
     }
 
@@ -20,7 +21,8 @@ public class EternalGoal : Goal
 
     public override string GetStringRepresentation()
     {
-        return "";
+
+        return $"EternalGoal:{_shortName};{_description};{_points}";
     }
 
 }
